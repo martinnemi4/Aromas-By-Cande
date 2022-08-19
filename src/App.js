@@ -1,11 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+/*Importando navbar*/
+import "./components/NavBar.js"
+import NavBar from './components/NavBar.js';
+
+
+
+
+
 
 function App() {
   return (
     <div className="App">
+      <div>
+        <NavBar></NavBar>
+      </div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
           Aromas By Cande <br></br>Tienda Online
         </p>

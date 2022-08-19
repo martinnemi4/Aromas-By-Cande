@@ -3,7 +3,7 @@ import './App.css';
 /*Importando navbar*/
 import "./components/NavBar.js"
 import NavBar from './components/NavBar.js';
-
+import ItemListContainer from "./components/ItemListContainer"
 
 
 
@@ -14,6 +14,9 @@ function App() {
     <div className="App">
       <div>
         <NavBar></NavBar>
+      </div>
+      <div>
+        <ItemListContainer></ItemListContainer>
       </div>
       <header className="App-header">
         

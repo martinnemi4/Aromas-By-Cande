@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import ShoppingCartIcon from "./CartWidget"
 
 
 function NavBar() {
@@ -32,6 +33,9 @@ function NavBar() {
                 Link
             </Nav.Link>
             </Nav>
+            <button className='btn-carrito'>
+            <ShoppingCartIcon></ShoppingCartIcon>
+            </button>
             <Form className="d-flex">
             <Form.Control
                 type="search"

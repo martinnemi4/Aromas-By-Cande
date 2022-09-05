@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
 /*Importando navbar*/
-import "./components/NavBar.js"
-import NavBar from './components/NavBar.js';
-import ItemListContainer from "./components/ItemListContainer"
-
-
+import "./Components/NavBar/NavBar"
+import NavBar from './Components/NavBar/NavBar';
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
+import Item from './Components/Item/Item';
 
 
 
@@ -15,25 +14,30 @@ function App() {
       <div>
         <NavBar></NavBar>
       </div>
-      <div>
-        <ItemListContainer></ItemListContainer>
-      </div>
       <header className="App-header">
         
-        <p>
-          Aromas By Cande <br></br>Tienda Online
-        </p>
+        <h1 className='titulo'>AROMAS BY CANDE</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Ir a la tienda
+          
         </a>
       </header>
+      <main className='product-cards'>
+        <ItemListContainer/>
+      </main>
+
+      <footer>
+        <p><b>Aromas By Cande&reg;</b></p>
+        <p>Web Design by <a href='https://www.linkedin.com/in/martin-nemi/' target="_blank">Martin Nemi</a></p>
+      </footer>
     </div>
   );
 }
 
 export default App;
+
+

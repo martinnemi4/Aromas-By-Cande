@@ -1,0 +1,11 @@
+.card{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.product-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+

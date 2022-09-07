@@ -5,6 +5,7 @@ import "./Components/NavBar/NavBar"
 import NavBar from './Components/NavBar/NavBar';
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
 import Item from './Components/Item/Item';
+import getItem from "./Components/ItemDetailContainer/ItemDetailContainer"
 
 
 
@@ -28,6 +29,7 @@ function App() {
       </header>
       <main className='product-cards'>
         <ItemListContainer/>
+        <getItem/>
       </main>
 
       <footer>

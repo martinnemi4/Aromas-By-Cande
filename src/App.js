@@ -5,7 +5,7 @@ import "./Components/NavBar/NavBar"
 import NavBar from './Components/NavBar/NavBar';
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
 import Item from './Components/Item/Item';
-import getItem from "./Components/ItemDetailContainer/ItemDetailContainer"
+import GetItem from "./Components/ItemDetailContainer/ItemDetailContainer"
 
 
 
@@ -29,12 +29,11 @@ function App() {
       </header>
       <main className='product-cards'>
         <ItemListContainer/>
-        <getItem/>
+        
       </main>
 
       <footer>
-        <p><b>Aromas By Cande&reg;</b></p>
-        <p>Web Design by <a href='https://www.linkedin.com/in/martin-nemi/' target="_blank">Martin Nemi</a></p>
+        <p><b>Aromas By Cande&reg; <br></br> Web Design by <a href='https://www.linkedin.com/in/martin-nemi/' target="_blank">Martin Nemi</a> with ♥ and 🧠!</b></p>
       </footer>
     </div>
   );

@@ -15,7 +15,7 @@ function NavBar() {
     <Navbar bg="light" expand="lg">
         <Container fluid>
         <Navbar.Brand href="#"></Navbar.Brand>
-        <a href='#' className='logo'>
+        <a href='../ItemListContainer/ItemListContainer.js' className='logo'>
             <img src={logo} alt='Logo' width="30"></img>
         </a>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -23,10 +23,10 @@ function NavBar() {
         <Nav className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll>
-            <Nav.Link href="#action1">Inicio</Nav.Link>
-            <Nav.Link href="#action2">Tienda</Nav.Link>
+            <Nav.Link href='../ItemListContainer/ItemListContainer.js'>Inicio</Nav.Link>
+            <Nav.Link href='../ItemListContainer/ItemListContainer.js'>Tienda</Nav.Link>
             <NavDropdown title="Sobre Nosotros" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Quienes Somos</NavDropdown.Item>
+                <NavDropdown.Item href="../ItemListContainer/ItemListContainer.js">Quienes Somos</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
                 Contactanos!
                 </NavDropdown.Item>

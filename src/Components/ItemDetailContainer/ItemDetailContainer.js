@@ -6,7 +6,7 @@ const GetItem = () => {
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
             resolve(ItemDetail)
-            .then(useState(ItemDetail));
+            .then(ItemDetail);
         }, 1500);
     })
 }

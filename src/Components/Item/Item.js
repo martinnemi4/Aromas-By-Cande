@@ -11,6 +11,7 @@ import ItemCount from '../ItemCount/ItemCount';
 export default function Item({product}) {
   const {nombre, precio, imagen} = product
   return (
+<a href="../ItemDetailContainer/ItemDetailContainer.js">
     <Card sx={{ maxWidth: 345 }} className="card">
       <CardMedia
         component="img"
@@ -32,6 +33,6 @@ export default function Item({product}) {
       initial="1"
       onAdd="1"
       />
-    </Card>
+    </Card></a>
   );
 }

@@ -1,12 +1,13 @@
+import { ProductionQuantityLimits } from '@mui/icons-material'
 import React from 'react'
 
-const ItemDetail = () => {
+const ItemDetail = ({product}) => {
   return (
     //descripcion, foto y precio
     <div>
-        <img></img>
-        <h2>$5.000</h2>
-        <p>Descripcion del producto</p>
+        <img src={product.imagen}></img>
+        <h2>{product.nombre}</h2>
+        <p>{product.descripcion}</p>
     </div>
   )
 }

@@ -7,11 +7,13 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import "./Item.css"
 import ItemCount from '../ItemCount/ItemCount';
+import { NavigateNextSharp } from '@mui/icons-material';
+
 
 export default function Item({product}) {
   const {nombre, precio, imagen} = product
   return (
-<a href="../ItemDetailContainer/ItemDetailContainer.js">
+<a>
     <Card sx={{ maxWidth: 345 }} className="card">
       <CardMedia
         component="img"
@@ -33,6 +35,7 @@ export default function Item({product}) {
       initial="1"
       onAdd="1"
       />
+      <Button>Ver Mas</Button>
     </Card></a>
   );
 }

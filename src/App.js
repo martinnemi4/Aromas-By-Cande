@@ -5,7 +5,7 @@ import "./Components/NavBar/NavBar"
 import NavBar from './Components/NavBar/NavBar';
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
 import Item from './Components/Item/Item';
-import GetItem from "./Components/ItemDetailContainer/ItemDetailContainer"
+import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 
 
 
@@ -18,18 +18,9 @@ function App() {
       <header className="App-header">
         
         <h1 className='titulo'>AROMAS BY CANDE</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-        </a>
       </header>
       <main className='product-cards'>
-        <ItemListContainer/>
-        
+        <ItemDetailContainer/>
       </main>
 
       <footer>

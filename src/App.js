@@ -20,7 +20,7 @@ function App() {
         <h1 className='titulo'>AROMAS BY CANDE</h1>
       </header>
       <main className='product-cards'>
-        <ItemDetailContainer/>
+        <ItemListContainer/>
       </main>
 
       <footer>

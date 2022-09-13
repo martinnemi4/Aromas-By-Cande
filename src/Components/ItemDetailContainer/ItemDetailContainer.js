@@ -1,21 +1,24 @@
 import React, {useState, useEffect} from "react";
-import ItemDetail from "../ItemDetail/ItemDetail"
+import ItemDetail from "../ItemDetail/ItemDetail";
+import { useParams } from "react-router-dom";
 
 
 
 const ItemDetailContainer = () => {
     const [product, setProduct]= useState([])
-    const id= 1;
+    const {id}= useParams();
 
     const arrayDeproductos = [
         {
             id: 1,
+            category: "chocolates",
             nombre: "Torta de Oreo", 
             precio: "$5.000",
             imagen: "https://www.recetasderechupete.com/wp-content/uploads/2019/11/Tarta-de-Oreo.jpg"
         },
         {
             id: 2,
+            category: "chocolates",
             nombre: "Chocotorta", 
             precio: "$5.000",
             imagen: "https://www.clarin.com/img/2020/07/15/la-chocotorta-perfecta-planeta___qH4UH5dLO_1256x620__1.jpg"

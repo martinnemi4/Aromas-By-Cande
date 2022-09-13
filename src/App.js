@@ -6,12 +6,12 @@ import NavBar from './Components/NavBar/NavBar';
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
 import Item from './Components/Item/Item';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
-
-
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <div>
         <NavBar></NavBar>
       </div>
@@ -20,8 +20,12 @@ function App() {
         <h1 className='titulo'>AROMAS BY CANDE</h1>
       </header>
       <main className='product-cards'>
-        <ItemListContainer/>
+      <Routes>
+      <Route path="/" element={<ItemListContainer />}/>
+      <Route path='/category/:id' element={<ItemListContainer/>}/>
+        </Routes>
       </main>
+      </BrowserRouter>
 
       <footer>
         <p><b>Aromas By Cande&reg; <br></br> Web Design by <a href='https://www.linkedin.com/in/martin-nemi/' target="_blank">Martin Nemi</a> with ♥ and 🧠!</b></p>

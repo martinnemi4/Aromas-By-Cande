@@ -8,6 +8,7 @@ import ShoppingCartIcon from "../CartWidget/CartWidget"
 import SearchIcon from '@mui/icons-material/Search';
 import logo from '../../img/logo.jpg'
 import './NavBar.css'
+import {Link} from "react-router-dom";
 
 
 function NavBar() {
@@ -23,8 +24,8 @@ function NavBar() {
         <Nav className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll>
-            <Nav.Link href='../ItemListContainer/ItemListContainer.js'>Inicio</Nav.Link>
-            <Nav.Link href='../ItemListContainer/ItemListContainer.js'>Tienda</Nav.Link>
+            <Link to="/">Inicio</Link>
+            <Link to="/category/chocolates">Chocolates</Link>
             <NavDropdown title="Sobre Nosotros" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="../ItemListContainer/ItemListContainer.js">Quienes Somos</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">

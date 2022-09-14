@@ -26,6 +26,7 @@ function NavBar() {
             navbarScroll>
             <Link to="/">Inicio</Link>
             <Link to="/category/chocolates">Chocolates</Link>
+            <Link to="/category/frutillas">Frutillas</Link>
             <NavDropdown title="Sobre Nosotros" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="../ItemListContainer/ItemListContainer.js">Quienes Somos</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">

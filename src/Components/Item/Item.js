@@ -8,10 +8,11 @@ import Typography from '@mui/material/Typography';
 import "./Item.css"
 import ItemCount from '../ItemCount/ItemCount';
 import { NavigateNextSharp } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 
 
 export default function Item({product}) {
-  const {nombre, precio, imagen} = product
+  const {nombre, precio, imagen, id} = product
   return (
 <a>
     <Card sx={{ maxWidth: 345 }} className="card">
@@ -35,7 +36,9 @@ export default function Item({product}) {
       initial="1"
       onAdd="1"
       />
-      <Button>Ver Mas</Button>
+      <Link to={`/detail/${id}`}>
+        <Button>Ver Mas</Button>
+      </Link>
     </Card></a>
   );
 }

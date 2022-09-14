@@ -31,11 +31,6 @@ export default function Item({product}) {
         </Typography>
       </CardContent>
 
-      <ItemCount
-      stock="10"
-      initial="1"
-      onAdd="1"
-      />
       <Link to={`/detail/${id}`}>
         <Button>Ver Mas</Button>
       </Link>

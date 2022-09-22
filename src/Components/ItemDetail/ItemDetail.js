@@ -1,12 +1,17 @@
-import { ProductionQuantityLimits } from '@mui/icons-material'
 import React from 'react'
 import ItemCount from '../ItemCount/ItemCount'
+import { useCartContext } from '../CartContext/CartContext'
+
 
 
 const ItemDetail = ({product}) => {
+  const {addProduct} = useCartContext();
   const onAdd = (cantidad) => {
     alert("Se agregaron " + cantidad + " productos al carrito")
+    addProduct(product, cantidad);
   }
+
+
   return (
     //descripcion, foto y precio
     <div>
@@ -18,8 +23,10 @@ const ItemDetail = ({product}) => {
         initial={1}
         onAdd= {onAdd}
         />
+        <button>Comprar</button>
     </div>
   )
 }
 
 export default ItemDetail
+

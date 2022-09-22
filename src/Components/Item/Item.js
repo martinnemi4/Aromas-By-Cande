@@ -7,9 +7,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import "./Item.css"
 import ItemCount from '../ItemCount/ItemCount';
-import { NavigateNextSharp } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
-
 
 export default function Item({product}) {
   const {nombre, precio, imagen, id} = product
@@ -37,3 +35,4 @@ export default function Item({product}) {
     </Card></a>
   );
 }
+

@@ -4,9 +4,12 @@ import './App.css';
 import "./Components/NavBar/NavBar"
 import NavBar from './Components/NavBar/NavBar';
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
-import Item from './Components/Item/Item';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import CartProvider from './Components/CartContext/CartContext';
+import ShoppingCartIcon from './Components/CartWidget/CartWidget';
+
+
 
 function App() {
   return (
@@ -20,11 +23,14 @@ function App() {
         <h1 className='titulo'>AROMAS BY CANDE</h1>
       </header>
       <main className='product-cards'>
+      <CartProvider value='Pablooo'>
       <Routes>
       <Route path="/" element={<ItemListContainer />}/>
       <Route path='/category/:id' element={<ItemListContainer/>}/>
+      <Route path='/carrito' element={<ShoppingCartIcon/>}/>
       <Route path='/detail/:id' element={<ItemDetailContainer/>}/>
         </Routes>
+        </CartProvider>
       </main>
       </BrowserRouter>
 
